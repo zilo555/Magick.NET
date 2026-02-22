@@ -1,7 +1,7 @@
 # Libraries
-Magick.Native [99e9911a125db02d1396298322cd3e5a90333e5f](https://github.com/dlemstra/Magick.Native/commit/99e9911a125db02d1396298322cd3e5a90333e5f) is build with the following libraries:
+Magick.Native [066fbc6ea4ef77612560beaa7096d05d688ba4c7](https://github.com/dlemstra/Magick.Native/commit/066fbc6ea4ef77612560beaa7096d05d688ba4c7) is build with the following libraries:
 
-- ImageMagick 7.1.2-14 (Beta) (2026-02-16)
+- ImageMagick 7.1.2-15 (2026-02-22)
 - aom 3.13.1 (2025-09-05)
 - brotli 1.2.0 (2025-10-27)
 - libbzip2 1.0.8 (2019-07-13)
@@ -26,7 +26,7 @@ Magick.Native [99e9911a125db02d1396298322cd3e5a90333e5f](https://github.com/dlem
 - liblzma 5.8.2 (2025-12-17)
 - openh264 2.6.0 (2025-02-12)
 - openjpeg 2.5.4 (2025-09-20)
-- openjph 0.26.0 (2025-12-24)
+- openjph 0.26.3 (2026-02-17)
 - pango 1.45.3 (2020-06-22)
 - pixman 0.46.4 (2025-07-20)
 - libpng 1.6.55 (2026-02-09)
@@ -37,4 +37,4 @@ Magick.Native [99e9911a125db02d1396298322cd3e5a90333e5f](https://github.com/dlem
 - libwebp 1.6.0 (2025-07-09)
 - libxml2 2.15.1 (2025-10-16)
 - libzip 1.11.4 (2025-05-23)
-- zlib 1.3.1 (2024-01-22)
+- zlib 1.3.2 (2026-02-17)
