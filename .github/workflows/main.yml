@@ -410,25 +410,14 @@ jobs:
           path: packages
           merge-multiple: true
 
-      - name: Install dotnet sign
-        run: dotnet tool install --global sign --prerelease
-
-      - name: Azure CLI login with federated credential
-        uses: azure/login@a457da9ea143d694b1b9c7c869ebb04ebe844ef5 # v2.3.0
+      - name: Sign executables and libraries
+        uses: ImageMagick/code-signing@4d19869732e1cd97bb823ad21ebffb26ad10836c # v1.0.0
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-
-      - name: Sign NuGet package
-        run: sign code trusted-signing `
-          --trusted-signing-account ImageMagick `
-          --trusted-signing-certificate-profile ImageMagick2028 `
-          --trusted-signing-endpoint https://wus2.codesigning.azure.net `
-          --azure-credential-type azure-cli `
-          --verbosity information `
-          *.nupkg
-        working-directory: packages
+          directory: ${{ github.workspace }}\packages
+          files: '*.nupkg'
 
       - name: Print public key
         run: |
