@@ -15,9 +15,9 @@ public partial class MagickNETTests
             var delegates = MagickNET.Delegates;
 
             if (Runtime.IsWindows)
-                Assert.Equal("bzlib cairo freetype gslib heic jng jp2 jpeg jxl lcms lqr lzma openexr pangocairo png ps raqm raw rsvg tiff webp xml zip zlib", delegates);
+                Assert.Equal("bzlib cairo freetype gslib heic jng jp2 jpeg jxl lcms lqr lzma openexr pangocairo png ps raqm raw rsvg tiff webp xml zip zlib zstd", delegates);
             else
-                Assert.Equal("bzlib cairo fontconfig freetype heic jng jp2 jpeg jxl lcms lqr lzma openexr pangocairo png raqm raw rsvg tiff webp xml zip zlib", delegates);
+                Assert.Equal("bzlib cairo fontconfig freetype heic jng jp2 jpeg jxl lcms lqr lzma openexr pangocairo png raqm raw rsvg tiff webp xml zip zlib zstd", delegates);
         }
     }
 }
